@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0%;
+}
+
+body{
+    background-image: url(https://s1.1zoom.me/b4850/991/Men_Bodybuilding_Hands_Barbell_Muscle_512557_1920x1080.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    backdrop-filter: none;
+    backdrop-filter: blur(100px);
+}
+
+.cabecalho{
+    display: flex;
+    color: aliceblue;
+    margin-left: 50px;
+    padding: 30px;
+    justify-content: space-between;
+}
+
+h1{
+    font-size: 50px;
+}
+
+.links a{
+    color: aliceblue;
+}
+
+.links{
+    display: flex;
+    margin-right: 30px;
+    gap: 32px;
+}
+
