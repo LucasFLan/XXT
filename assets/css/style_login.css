@@ -1,0 +1,60 @@
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    color: #f4fffe;
+    padding: 20px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.links{
+    display: flex;
+    gap: 5px;
+}
+
+.links a{
+    color: #cefffa;
+    text-decoration: none;
+    padding: 1.5rem;
+    transform: 1ms ease-in;
+    position: relative; /*para realizar o efeito o position tem que poder ser alterado*/
+}
+/*para realizar a animação em baixo dos links*/
+.links a:before{ /*isso siginifica dizer como o container do link era antes da animação*/
+    content: ' ';
+    position: absolute; /*para realizar o efeito o position tem que ser absolute*/
+    bottom: 0;
+    left: 0px;
+    width: 0px;
+    height: 1px;
+    background-color: aquamarine;
+    transition: all 1.5s ease;
+}
+
+.links a:hover:before{
+    width: 100%; /*esse hover altera a largura do sublinhado widht de 0 vai pra 100%*/
+}
+
+.pagina-login{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    width: 600px;
+    border: 2px solid #cefffa;
+    border-radius: 20px;
+}
+
+.email, .senha {
+    display: flex;
+    flex-direction: column;
+}
