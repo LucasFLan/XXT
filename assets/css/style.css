@@ -134,10 +134,12 @@ html{
 .rodape{
     display: flex;/* inicia o display flex */
     align-items: center;/* alinha os itens na vertical */
-    margin-top: 150px; /* abaixa intens na vertical */
     justify-content: center; /* alinha os itens na horizontal */
     gap: 20px; /*Separa os intens */
     color: #fefefe;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 .rodape a{
