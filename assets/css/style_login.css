@@ -43,18 +43,101 @@
     align-items: center;
 }
 
+h3{
+    font-size: 24px;
+    color: #fff;
+}
+
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 500px;
-    width: 600px;
+    height: 600px;
+    width: 500px;
     border: 2px solid #cefffa;
     border-radius: 20px;
+    gap: 40px;
 }
 
 .email, .senha {
     display: flex;
     flex-direction: column;
+    color: #cefffa;
+}
+
+.email label, .senha label {
+    padding: 4px 0px;
+}
+
+.email input, .senha input{
+    border-radius: 6px;
+    padding: 10px;
+    width: 300px;
+    border: 2px solid #fff;
+}
+
+.icones {
+    display: flex;
+    gap: 40px;
+}
+
+.icones i{
+    font-size: 30px;
+    border: 2px solid #cefffa;
+    padding: 8px 20px;
+    border-radius: 10px;
+    background-color: #cefffa;
+}
+
+.caixa_botao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+}
+.caixa_botao{
+    text-decoration: none;
+}
+
+.caixa_botao button:hover{
+    border: none;
+    color: rgb(23, 82, 88);
+}
+
+.caixa_botao button:before {
+    content: '';
+    border-radius: 10px;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 0;
+    height: 48px;
+    background-color: #cefffa;
+    z-index: -1;/*para a transição nao cobrir o texto*/
+    transition: 1.2s;
+}
+
+.caixa_botao button:hover:before{
+    width: 100%;
+}
+
+.botao{
+    display: flex;  /* inicia o display flex */
+    flex-direction: column;
+    align-items: center; /* alinha os itens na vertical */
+    justify-content: center; /* alinha os itens na horizontal */
+    height: 48px; /* altura do botao */
+    width: 230px; /* largura do botao */
+    font-family: "Roboto";
+    cursor: pointer; /* muda o mouse quando passa em cima*/
+    background: transparent;
+    border-radius: 12px;
+    color: #cefffa;
+    border: 0.7px solid #cefffa;
+    text-transform: uppercase;/* caso o texto venha com alguma letra minuscula ele automaticamente altera para maiusculo*/
+    font-weight: bold; /*letra mais grossa*/
+    letter-spacing: 0.1rem; /*distancia entre as letras*/
+    position: relative; /*posicao relativa para realizar o efeito*/
+    transition: 0.1s; /*tempo de transicao*/
 }
