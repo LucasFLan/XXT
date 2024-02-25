@@ -1,0 +1,176 @@
+
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    color: #f4fffe;
+    padding: 20px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.links{
+    display: flex;
+    gap: 5px;
+}
+
+.links a{
+    color: #cefffa;
+    text-decoration: none;
+    padding: 1.5rem;
+    transform: 1ms ease-in;
+    position: relative; /*para realizar o efeito o position tem que poder ser alterado*/
+}
+/*para realizar a animação em baixo dos links*/
+.links a:before{ /*isso siginifica dizer como o container do link era antes da animação*/
+    content: ' ';
+    position: absolute; /*para realizar o efeito o position tem que ser absolute*/
+    bottom: 0;
+    left: 0px;
+    width: 0px;
+    height: 1px;
+    background-color: aquamarine;
+    transition: all 1.5s ease;
+}
+
+.links a:hover:before{
+    width: 100%; /*esse hover altera a largura do sublinhado widht de 0 vai pra 100%*/
+}
+
+.pagina_imc{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h2{
+    font-size: 24px;
+    color: #ffffff;
+}
+.caixa_peso{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #cefffa;
+}
+.caixa_altura{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #cefffa;
+}
+
+.peso input{
+    border-radius: 6px;
+    padding: 10px;
+    width: 300px;
+    border: 2px solid #fff;
+}
+.altura input{
+    border-radius: 6px;
+    padding: 10px;
+    width: 300px;
+    border: 2px solid #fff;
+}
+.container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 500px;
+        width: 400px;
+        background-image: linear-gradient(to right,rgb(102, 102, 102), rgb(48, 48, 48), rgb(43, 43, 43), rgb(36, 36, 36));
+        border: 2px solid #cefffa;
+        border-radius: 20px;
+        gap: 40px;
+        margin-bottom: 3%;
+}
+.caixa_botao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+}
+.caixa_botao{
+    text-decoration: none;
+}
+
+.caixa_botao button:hover{
+    border: none;
+    color: rgb(23, 82, 88);
+    z-index: 1;
+}
+
+.caixa_botao button:before {
+    content: '';
+    border-radius: 10px;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 0;
+    height: 48px;
+    background-color: #cefffa;
+    z-index: -1;/*para a transição nao cobrir o texto*/
+    transition: 1.2s;
+}
+
+.caixa_botao button:hover:before{
+    width: 100%;
+    z-index: -1;
+}
+
+.botao{
+    display: flex;  /* inicia o display flex */
+    flex-direction: column;
+    align-items: center; /* alinha os itens na vertical */
+    justify-content: center; /* alinha os itens na horizontal */
+    height: 48px; /* altura do botao */
+    width: 230px; /* largura do botao */
+    font-family: "Roboto";
+    cursor: pointer; /* muda o mouse quando passa em cima*/
+    background: transparent;
+    border-radius: 12px;
+    color: #cefffa;
+    border: 0.7px solid #cefffa;
+    text-transform: uppercase;/* caso o texto venha com alguma letra minuscula ele automaticamente altera para maiusculo*/
+    font-weight: bold; /*letra mais grossa*/
+    letter-spacing: 0.1rem; /*distancia entre as letras*/
+    position: relative; /*posicao relativa para realizar o efeito*/
+    transition: 0.1s; /*tempo de transicao*/
+    z-index: 0;
+}
+
+#resultado{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 2px solid #cefffa;
+}
+
+#imc{
+    display: flex;
+    color: #cefffa;
+    align-items: center;
+    flex-direction: column;
+    font-size: 2.2rem;
+}
+#imc span:last-child{
+    font-size: 1rem;
+}
+
+#description{
+    width: 15.5rem;
+    color: #f4fffe;
+}
+
+.hidden{
+    display: none;
+    color: #ffffff;
+}

@@ -45,7 +45,7 @@
 
 h3{
     font-size: 24px;
-    color: #fff;
+    color: #ffffff;
 }
 
 .container {
@@ -53,11 +53,13 @@ h3{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 600px;
-    width: 500px;
+    height: 500px;
+    width: 400px;
+    background-image: linear-gradient(to right,rgb(102, 102, 102), rgb(48, 48, 48), rgb(43, 43, 43), rgb(36, 36, 36));
     border: 2px solid #cefffa;
     border-radius: 20px;
     gap: 40px;
+    margin-bottom: 3%;
 }
 
 .email, .senha {
@@ -103,6 +105,7 @@ h3{
 .caixa_botao button:hover{
     border: none;
     color: rgb(23, 82, 88);
+    z-index: 1;
 }
 
 .caixa_botao button:before {
@@ -120,6 +123,7 @@ h3{
 
 .caixa_botao button:hover:before{
     width: 100%;
+    z-index: -1;
 }
 
 .botao{
@@ -140,4 +144,5 @@ h3{
     letter-spacing: 0.1rem; /*distancia entre as letras*/
     position: relative; /*posicao relativa para realizar o efeito*/
     transition: 0.1s; /*tempo de transicao*/
+    z-index: 0;
 }
