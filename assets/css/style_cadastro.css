@@ -1,0 +1,34 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nome_container {
+    display: flex;
+
+}
+
+.nome, .sobrenome {
+    display: flex;
+    flex-direction: column;
+} 
+
+
+.cpf_container {
+    display: flex;
+}
+
+.cpf, .idade {
+    display: flex;
+    flex-direction: column;
+}
+
+.senha_container {
+    display: flex;
+}
+
+.senha, .confirm_senha {
+    display: flex;
+    flex-direction: column;
+}
