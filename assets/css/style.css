@@ -62,6 +62,7 @@
     width: 100%; /*esse hover altera a largura do sublinhado widht de 0 vai pra 100%*/
 }
 
+
 .rodape{
     display: flex;/* inicia o display flex */
     align-items: center;/* alinha os itens na vertical */

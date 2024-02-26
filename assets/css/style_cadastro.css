@@ -115,6 +115,10 @@
     border: 2px solid var(--branco);
 }
 
+input::placeholder {
+    color: var(--preto);
+}
+
 .ofertas {
     display: flex;
     align-items: center;

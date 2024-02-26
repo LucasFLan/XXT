@@ -1,6 +1,7 @@
 :root {
     --cor-primaria: #cefffa;
     --branco: #fff;
+    --preto: #000000;
 }
 
 .cabecalho{
@@ -9,34 +10,6 @@
     padding: 20px;
     margin-left: 80px;
     margin-right: 80px;
-}
-
-.links{
-    display: flex;
-    gap: 5px;
-}
-
-.links a{
-    color: var(--cor-primaria);
-    text-decoration: none;
-    padding: 1.5rem;
-    transform: 1ms ease-in;
-    position: relative; /*para realizar o efeito o position tem que poder ser alterado*/
-}
-/*para realizar a animação em baixo dos links*/
-.links a:before{ /*isso siginifica dizer como o container do link era antes da animação*/
-    content: ' ';
-    position: absolute; /*para realizar o efeito o position tem que ser absolute*/
-    bottom: 0;
-    left: 0px;
-    width: 0px;
-    height: 1px;
-    background-color: aquamarine;
-    transition: all 1.5s ease;
-}
-
-.links a:hover:before{
-    width: 100%; /*esse hover altera a largura do sublinhado widht de 0 vai pra 100%*/
 }
 
 .pagina-login{
@@ -83,6 +56,10 @@ h3{
     border: 2px solid var(--branco);
 }
 
+input::placeholder {
+    color: var(--preto);
+}
+
 .icones {
     display: flex;
     gap: 40px;
@@ -94,6 +71,7 @@ h3{
     padding: 8px 20px;
     border-radius: 10px;
     background-color: var(--cor-primaria);
+    cursor: pointer;
 }
 
 .caixa_botao{
