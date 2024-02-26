@@ -1,34 +1,108 @@
+.form_container {
+    display: flex;
+    justify-content: center;
+}
+
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-image: linear-gradient(to right,rgb(102, 102, 102), rgb(48, 48, 48), rgb(43, 43, 43), rgb(36, 36, 36));
+    border: 2px solid #cefffa;
+    border-radius: 20px;
+    height: 715px;
+    width: 550px;
+    gap: 20px;
+}
+
+h1 {
+    color: #fff;
 }
 
 .nome_container {
     display: flex;
+    gap: 25px;
 
 }
 
 .nome, .sobrenome {
     display: flex;
     flex-direction: column;
+    width: 220px;
+    color: #cefffa;
 } 
+
+.nome label, .sobrenome label {
+    padding: 4px 0px;
+    color: #cefffa;
+}
+
+.nome input, .sobrenome input{
+    border-radius: 6px;
+    padding: 10px;
+    border: 2px solid #fff;
+}
+
+
+.email {
+    display: flex;
+    flex-direction: column;
+    width: 465px;
+    color: #cefffa;
+}
+
+.email label{
+    padding: 4px 0px;
+}
+
+.email input {
+    border-radius: 6px;
+    padding: 10px;
+    border: 2px solid #fff;
+}
 
 
 .cpf_container {
     display: flex;
+    gap: 25px;
+    color: #cefffa;
 }
 
 .cpf, .idade {
     display: flex;
     flex-direction: column;
+    width: 220px;
 }
+
+.cpf label, .idade label{
+    padding: 4px 0px;
+}
+
+.cpf input, .idade input {
+    border-radius: 6px;
+    padding: 10px;
+    border: 2px solid #fff;
+}
+
 
 .senha_container {
     display: flex;
+    gap: 25px;
+    color: #cefffa;
 }
 
 .senha, .confirm_senha {
     display: flex;
     flex-direction: column;
+    width: 220px;
+}
+
+.senha label, .confirm_senha label{
+    padding: 4px 0px;
+}
+
+.senha input, .confirm_senha input {
+    border-radius: 6px;
+    padding: 10px;
+    border: 2px solid #fff;
 }
