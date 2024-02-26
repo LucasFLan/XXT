@@ -1,6 +1,7 @@
 .form_container {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .container {
@@ -10,8 +11,8 @@
     background-image: linear-gradient(to right,rgb(102, 102, 102), rgb(48, 48, 48), rgb(43, 43, 43), rgb(36, 36, 36));
     border: 2px solid #cefffa;
     border-radius: 20px;
-    height: 715px;
-    width: 550px;
+    height: 615px;
+    width: 700px;
     gap: 20px;
 }
 
@@ -28,7 +29,7 @@ h1 {
 .nome, .sobrenome {
     display: flex;
     flex-direction: column;
-    width: 220px;
+    width: 280px;
     color: #cefffa;
 } 
 
@@ -47,7 +48,7 @@ h1 {
 .email {
     display: flex;
     flex-direction: column;
-    width: 465px;
+    width: 585px;
     color: #cefffa;
 }
 
@@ -71,7 +72,7 @@ h1 {
 .cpf, .idade {
     display: flex;
     flex-direction: column;
-    width: 220px;
+    width: 280px;
 }
 
 .cpf label, .idade label{
@@ -94,7 +95,7 @@ h1 {
 .senha, .confirm_senha {
     display: flex;
     flex-direction: column;
-    width: 220px;
+    width: 280px;
 }
 
 .senha label, .confirm_senha label{
@@ -106,3 +107,26 @@ h1 {
     padding: 10px;
     border: 2px solid #fff;
 }
+
+.ofertas {
+    display: flex;
+    align-items: center;
+}
+
+.ofertas label {
+    padding-left: 10px ;
+}
+
+.ofertas input {
+    width: 32px;
+    height: 30px;
+}
+
+.botao {
+    padding: 8px 10px;
+    width: 585px;
+    border-radius: 8px;
+    border: none;
+    background-color: #cefffa;
+}
+
