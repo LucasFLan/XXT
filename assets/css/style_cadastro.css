@@ -1,3 +1,9 @@
+:root {
+    --cor-primaria: #cefffa;
+    --branco: #fff;
+    --preto: #000000
+}
+
 .form_container {
     display: flex;
     justify-content: center;
@@ -9,15 +15,16 @@
     flex-direction: column;
     align-items: center;
     background-image: linear-gradient(to right,rgb(102, 102, 102), rgb(48, 48, 48), rgb(43, 43, 43), rgb(36, 36, 36));
-    border: 2px solid #cefffa;
+    border: 2px solid var(--cor-primaria);
     border-radius: 20px;
     height: 615px;
     width: 700px;
     gap: 20px;
 }
 
-h1 {
-    color: #fff;
+.container h1 {
+    color: var(--branco);
+    margin-top: 60px;
 }
 
 .nome_container {
@@ -30,18 +37,18 @@ h1 {
     display: flex;
     flex-direction: column;
     width: 280px;
-    color: #cefffa;
+    color: var(--cor-primaria);
 } 
 
 .nome label, .sobrenome label {
     padding: 4px 0px;
-    color: #cefffa;
+    color: var(--cor-primaria);
 }
 
 .nome input, .sobrenome input{
     border-radius: 6px;
     padding: 10px;
-    border: 2px solid #fff;
+    border: 2px solid var(--branco);
 }
 
 
@@ -49,7 +56,7 @@ h1 {
     display: flex;
     flex-direction: column;
     width: 585px;
-    color: #cefffa;
+    color: var(--cor-primaria);
 }
 
 .email label{
@@ -59,14 +66,14 @@ h1 {
 .email input {
     border-radius: 6px;
     padding: 10px;
-    border: 2px solid #fff;
+    border: 2px solid var(--branco);
 }
 
 
 .cpf_container {
     display: flex;
     gap: 25px;
-    color: #cefffa;
+    color: var(--cor-primaria);
 }
 
 .cpf, .idade {
@@ -82,14 +89,14 @@ h1 {
 .cpf input, .idade input {
     border-radius: 6px;
     padding: 10px;
-    border: 2px solid #fff;
+    border: 2px solid var(--branco);
 }
 
 
 .senha_container {
     display: flex;
     gap: 25px;
-    color: #cefffa;
+    color: var(--cor-primaria);
 }
 
 .senha, .confirm_senha {
@@ -105,28 +112,82 @@ h1 {
 .senha input, .confirm_senha input {
     border-radius: 6px;
     padding: 10px;
-    border: 2px solid #fff;
+    border: 2px solid var(--branco);
 }
 
 .ofertas {
     display: flex;
     align-items: center;
+    margin-right: 45px;
 }
 
 .ofertas label {
     padding-left: 10px ;
+    color: var(--branco);
 }
 
 .ofertas input {
-    width: 32px;
-    height: 30px;
-}
-
-.botao {
-    padding: 8px 10px;
-    width: 585px;
+    appearance: none;
+    width: 35px;
+    height: 33px;
+    border: 2px solid var(--cor-primaria);
     border-radius: 8px;
-    border: none;
-    background-color: #cefffa;
 }
 
+.ofertas input:checked {
+    background-color: var(--cor-primaria);
+    background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 10 10'%3E%3Cg class='nc-icon-wrapper' stroke-width='1' fill='%23555555'%3E%3Cpath fill='none' stroke='%23000000' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='10' data-cap='butt' d='M2.83 4.72l1.58 1.58 2.83-2.83'/%3E%3C/g%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 40px;
+}
+
+.caixa_botao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    text-decoration: none;
+}
+
+.caixa_botao button:hover{
+    border: none;
+    color: rgb(23, 82, 88);
+    z-index: 1;
+}
+
+.caixa_botao button:before {
+    content: '';
+    border-radius: 10px;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 0;
+    height: 48px;
+    background-color: var(--cor-primaria);
+    z-index: -1;
+    transition: 1.2s;
+}
+
+.caixa_botao button:hover:before{
+    width: 100%;
+    z-index: -1;
+}
+
+.botao{
+    height: 48px; 
+    width: 585px; 
+    font-family: "Roboto";
+    cursor: pointer; 
+    background: transparent;
+    border-radius: 12px;
+    color: var(--preto);
+    border: 0.7px solid var(--cor-primaria);
+    text-transform: uppercase;
+    font-weight: bold; 
+    letter-spacing: 0.1rem; 
+    position: relative; 
+    transition: 0.1s; 
+    z-index: 0;
+    background-color: var(--branco);
+}

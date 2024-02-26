@@ -1,7 +1,11 @@
+:root {
+    --cor-primaria: #cefffa;
+    --branco: #fff;
+}
+
 .cabecalho{
     display: flex;
     justify-content: space-between;
-    color: #f4fffe;
     padding: 20px;
     margin-left: 80px;
     margin-right: 80px;
@@ -13,7 +17,7 @@
 }
 
 .links a{
-    color: #cefffa;
+    color: var(--cor-primaria);
     text-decoration: none;
     padding: 1.5rem;
     transform: 1ms ease-in;
@@ -45,7 +49,7 @@
 
 h3{
     font-size: 24px;
-    color: #ffffff;
+    color: var(--branco);
 }
 
 .container {
@@ -56,7 +60,7 @@ h3{
     height: 500px;
     width: 400px;
     background-image: linear-gradient(to right,rgb(102, 102, 102), rgb(48, 48, 48), rgb(43, 43, 43), rgb(36, 36, 36));
-    border: 2px solid #cefffa;
+    border: 2px solid var(--cor-primaria);
     border-radius: 20px;
     gap: 40px;
     margin-bottom: 3%;
@@ -65,7 +69,7 @@ h3{
 .email, .senha {
     display: flex;
     flex-direction: column;
-    color: #cefffa;
+    color: var(--cor-primaria);
 }
 
 .email label, .senha label {
@@ -76,7 +80,7 @@ h3{
     border-radius: 6px;
     padding: 10px;
     width: 300px;
-    border: 2px solid #fff;
+    border: 2px solid var(--branco);
 }
 
 .icones {
@@ -86,10 +90,10 @@ h3{
 
 .icones i{
     font-size: 30px;
-    border: 2px solid #cefffa;
+    border: 2px solid var(--cor-primaria);
     padding: 8px 20px;
     border-radius: 10px;
-    background-color: #cefffa;
+    background-color: var(--cor-primaria);
 }
 
 .caixa_botao{
@@ -116,7 +120,7 @@ h3{
     position: absolute;
     width: 0;
     height: 48px;
-    background-color: #cefffa;
+    background-color: var(--cor-primaria);
     z-index: -1;/*para a transição nao cobrir o texto*/
     transition: 1.2s;
 }
@@ -137,8 +141,8 @@ h3{
     cursor: pointer; /* muda o mouse quando passa em cima*/
     background: transparent;
     border-radius: 12px;
-    color: #cefffa;
-    border: 0.7px solid #cefffa;
+    color: var(--cor-primaria);
+    border: 0.7px solid var(--cor-primaria);
     text-transform: uppercase;/* caso o texto venha com alguma letra minuscula ele automaticamente altera para maiusculo*/
     font-weight: bold; /*letra mais grossa*/
     letter-spacing: 0.1rem; /*distancia entre as letras*/

@@ -1,3 +1,9 @@
+:root {
+    --cor-primaria: #cefffa;
+    --branco: #fff;
+    --preto: #000000
+}
+
 /*ZERANOD O CSS*/
 *{
     margin: 0;
@@ -10,7 +16,7 @@ html{
     width: 100vw;
     height: 100vh;
     font-size: 62.5;
-    color: black;
+    color: var(--preto);
     font-size: sans-serif;
 }
 
@@ -59,7 +65,7 @@ html{
     position: absolute;
     width: 0;
     height: 48px;
-    background-color: #cefffa;
+    background-color: var(--cor-primaria);
     z-index: -1;/*para a transição nao cobrir o texto*/
     transition: 1.2s;
 }
@@ -79,8 +85,8 @@ html{
     cursor: pointer; /* muda o mouse quando passa em cima*/
     background: transparent;
     border-radius: 18px;
-    color: #cefffa;
-    border: 0.7px solid #cefffa;
+    color: var(--cor-primaria);
+    border: 0.7px solid var(--cor-primaria);
     text-transform: uppercase;/* caso o texto venha com alguma letra minuscula ele automaticamente altera para maiusculo*/
     font-weight: bold; /*letra mais grossa*/
     letter-spacing: 0.1rem; /*distancia entre as letras*/
