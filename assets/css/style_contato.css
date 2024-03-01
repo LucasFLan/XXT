@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.conteudo_fundo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 400px;
+    background-color: black;
+    color: white;
+}
+
+.fale_conosco, .localizacao, .horario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 100px;
+}
+
+.fale_conosco {
+    margin-bottom: 50px;
+}
+
+.fale_conosco h2, .localizacao h2, .horario h2 {
+    padding-bottom: 10px;
+}
+
+.localizacao {
+    margin-bottom: 50px;
+}
+
+.conteudo_principal {
+    height: 500px;
+    width: 500px;
+    background-color: white;
+    color: black;
+    position: absolute;
+    right: 10%;
+    border: 2px solid black;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contate {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 50px;
+    width: 60%;
+}
+
+.contate input{
+    border: none;
+    outline: none;
+    border-bottom: 2px solid black;
+    width: 100%;
+}
+
+.contate h1 {
+    padding: 20px 0;
+    font-size: 30px;
+}
+
+#input_nome {
+    margin: 30px 0;
+    padding-bottom: 10px;
+}
+
+#input_email {
+    margin-bottom: 100px;
+    padding-bottom: 10px;
+}
+
+#input_mensagem {
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+#botao {
+    border: 2px solid black;
+    padding: 8px 40px;
+    background-color: transparent;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+
