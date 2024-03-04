@@ -40,13 +40,13 @@ html{
     font-size: 16px;
     text-transform: uppercase;/* caso o texto venha com alguma letra minuscula ele automaticamente altera para maiusculo*/
 }
-
 .caixa_botao{
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 8rem;
     background: transparent;
+    
 }
 .caixa_botao{
     text-decoration: none;
