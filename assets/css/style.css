@@ -14,7 +14,7 @@
 
 .pagina{
     background-image: linear-gradient( to right, rgb(187, 187, 187), rgb(87, 87, 87), rgb(62, 62, 62), rgb(43, 43, 43) );
-    height: calc(100vh - 130px);
+    height: calc(100vh - 149px);
 }
 
 
@@ -62,10 +62,6 @@
     width: 100%; /*esse hover altera a largura do sublinhado widht de 0 vai pra 100%*/
 }
 
-.rodape_pai{
-    position: relative;
-}
-
 .rodape{
     display: flex;/* inicia o display flex */
     align-items: center;/* alinha os itens na vertical */
@@ -75,6 +71,7 @@
     width: 100%;
     position: absolute;
     bottom: 0;
+    height: 40px;
 }
 
 .rodape a{
