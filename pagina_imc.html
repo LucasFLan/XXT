@@ -1,64 +1,68 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="assets/css/style.css">
-        <link rel="stylesheet" href="./assets/css/style_imc.css">
-        <script src="https://kit.fontawesome.com/2cd803f66a.js" crossorigin="anonymous"></script>
-        <title>Calculo IMC</title>
-    </head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style_imc.css">
+    <script src="https://kit.fontawesome.com/2cd803f66a.js" crossorigin="anonymous"></script>
+    <script src="./assets/js/script.js" defer></script>
+    <title>Calculo IMC</title>
+</head>
+
 <body class="pagina">
-    <header class="cabecalho"> 
-        <h1 class="titulo1"> 
-            <a href="index.html" >
-                <i> XXT </i> 
+    <header class="cabecalho">
+        <h1 class="titulo1">
+            <a href="index.html">
+                <i> XXT </i>
             </a>
-        </h1> 
-        <nav class="links"> 
+        </h1>
+        <nav class="links">
             <a class="login" href="pagina_login.html">LOGIN</a>
             <a href="pagina_cadastro.html">CADASTRE-SE</a>
             <a href="pagina_treino.html">TREINO</a>
             <a href="pagina_contato.html">CONTATOS</a>
-            <a href="https://www.instagram.com/g_uimarodrigo/"><i class="fa-brands fa-instagram" style="color: #cefffa;"></i></a>
+            <a href="https://www.instagram.com/g_uimarodrigo/"><i class="fa-brands fa-instagram"
+                    style="color: #cefffa;"></i></a>
         </nav>
     </header>
     <main class="pagina_imc">
         <form class="container">
             <h2>CALCULADORA IMC</h2>
-            <div class="caixa_peso"> 
+            <div class="caixa_peso">
                 <label for="height">Peso em KG</label>
                 <div class="peso">
-                    <input placeholder="Kg" type="number" required>
+                    <input id="peso" placeholder="00" type="number" required>
                 </div>
             </div>
             <div class="caixa_altura">
                 <label for="height">Altura em metros</label>
                 <div class="altura">
-                    <input placeholder="m" type="number" required>
+                    <input id="altura" placeholder="0.00" type="number" required>
                 </div>
             </div>
-            <a href="#" class="caixa_botao"> 
-                <button class="botao">Calcular</button>
+            <a href="#" class="caixa_botao">
+                <button id="botao" class="botao">Calcular</button>
             </a>
-            <div id= "infos" class="hidden"> 
-                    <div id="resultado">
-                        <div id="imc">
-                           <span id="valor">55</span>
-                           <span> Seu IMC</span>
-                        </div>
-                        <span>55</span>
-                    </div>
-                    <div id="description"></div>
+            <div id="resultado" class="resultado hidden">
+                <div id="imc">
+                    <span id="valor">55</span>
+                    <span> Seu IMC</span>
+                </div>
+                <div id="description">Voce esta obeso dsad asd asd asd as das</div>
             </div>
-            </div>
-    </main> 
-    <footer class="rodape"> 
+        </form>
+    </main>
+    <footer class="rodape">
         <a href="pagina_cadastro.html">Cadastre-se e receba treinos exclusivos!</a>
         <a href="#">Dúvidas Gerais</a>
-        <a href="https://www.healthy-heart.org/pt/mantenha-o-seu-coracao-saudavel/manter-um-peso-saudavel/?gad_source=1&gclid=Cj0KCQiAoeGuBhCBARIsAGfKY7x0pzsy-8pCQCny1Ol5qdLAoYvJ52DOsHQ8DX5QZH8gOH54OYD7OccaAvbaEALw_wcB"> Mais informações sobre IMC</a>
+        <a
+            href="https://www.healthy-heart.org/pt/mantenha-o-seu-coracao-saudavel/manter-um-peso-saudavel/?gad_source=1&gclid=Cj0KCQiAoeGuBhCBARIsAGfKY7x0pzsy-8pCQCny1Ol5qdLAoYvJ52DOsHQ8DX5QZH8gOH54OYD7OccaAvbaEALw_wcB">
+            Mais informações sobre IMC</a>
         Todos os direitos reservados ☆☆☆☆☆
     </footer>
     <script src="assets/js/script.js"></script>
 </body>
+
 </html>

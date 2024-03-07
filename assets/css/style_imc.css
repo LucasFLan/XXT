@@ -82,17 +82,17 @@ h2{
     border: 2px solid var(--branco);
 }
 .container{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: 500px;
-        width: 400px;
-        background-image: linear-gradient(to right,rgb(102, 102, 102), rgb(48, 48, 48), rgb(43, 43, 43), rgb(36, 36, 36));
-        border: 2px solid var(--cor-primaria);
-        border-radius: 20px;
-        gap: 40px;
-        margin-bottom: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    width: 400px;
+    background-image: linear-gradient(to right,rgb(102, 102, 102), rgb(48, 48, 48), rgb(43, 43, 43), rgb(36, 36, 36));
+    border: 2px solid var(--cor-primaria);
+    border-radius: 20px;
+    gap: 40px;
+    margin-bottom: 3%;
 }
 .caixa_botao{
     display: flex;
@@ -134,7 +134,7 @@ h2{
     align-items: center; /* alinha os itens na vertical */
     justify-content: center; /* alinha os itens na horizontal */
     height: 48px; /* altura do botao */
-    width: 230px; /* largura do botao */
+    width: 300px; /* largura do botao */
     font-family: "Roboto";
     cursor: pointer; /* muda o mouse quando passa em cima*/
     background: transparent;
@@ -149,18 +149,22 @@ h2{
     z-index: 0;
 }
 
-#resultado{
+.resultado{
+    width: 80%;
     display: flex;
+    gap: 30px;
+    padding: 10px;
+    justify-content: space-between;
     align-items: center;
-    flex-direction: column;
-    align-items: center;
-    border-bottom: 2px solid var(--cor-primaria);
+    border-top: 1px solid var(--cor-primaria);
+    border-bottom: 1px solid var(--cor-primaria);
 }
 
 #imc{
     display: flex;
     color: var(--cor-primaria);
     align-items: center;
+    text-align: center;
     flex-direction: column;
     font-size: 2.2rem;
 }
