@@ -27,4 +27,3 @@ botao.addEventListener("click", function(e) {
     document.getElementById("resultado").classList.remove("hidden");
 
 })
-
