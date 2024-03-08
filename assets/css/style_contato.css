@@ -1,3 +1,7 @@
+:root {
+    --cor-primaria: #cefffa;
+}
+
 *{
     margin: 0;
     padding: 0;
