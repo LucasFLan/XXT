@@ -13,22 +13,20 @@
 }
 
 .pagina{
-    background-image: linear-gradient( to right, rgb(187, 187, 187), rgb(87, 87, 87), rgb(62, 62, 62), rgb(43, 43, 43) );
+    background-image: linear-gradient( to right, rgb(187, 187, 187), rgb(87, 87, 87), rgb(62, 62, 62), rgb(43, 43, 43));
     height: calc(100vh - 149px);
 }
-
 
 .cabecalho{
     display: flex;
     justify-content: space-between;
     color: #f4fffe;
     padding: 20px;
-    margin-left: 80px;
-    margin-right: 80px;
+    margin: 0px 80px;
 }
 
 .titulo1 a{
-    font-size: 60px;
+    font-size: 3.75rem;
     color: var(--cor-primaria);
     text-decoration: none;
 }
@@ -77,4 +75,16 @@
 .rodape a{
     color: #fefefe;
     text-decoration: none;
+}
+
+@media (max-width: 840px){
+    .cabecalho {
+        padding: 10px;
+        margin: 0px 40px;
+    }
+
+    .links {
+        display: none;
+    }
+    
 }
