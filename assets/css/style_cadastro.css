@@ -146,21 +146,13 @@ input::placeholder {
     background-size: 40px;
 }
 
-.caixa_botao{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: transparent;
-    text-decoration: none;
-}
-
-.caixa_botao button:hover{
+button:hover{
     border: none;
     color: rgb(23, 82, 88);
     z-index: 1;
 }
 
-.caixa_botao button:before {
+button:before {
     content: '';
     border-radius: 10px;
     bottom: 0;
@@ -173,7 +165,7 @@ input::placeholder {
     transition: 1.2s;
 }
 
-.caixa_botao button:hover:before{
+button:hover:before{
     width: 100%;
     z-index: -1;
 }
